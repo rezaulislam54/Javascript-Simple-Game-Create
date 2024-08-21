@@ -11,6 +11,13 @@ function removeClassById (elementId){
      scondSection.classList.remove('hidden')
 }
 
+// current alphabet text gete
+
+function geteElementTextById(data){
+    const element = document.getElementById(data);
+    const text = element.innerText;
+    return text;
+}
 
 // score and life inner text get
 function geteTextElementValuById(elementId){
@@ -33,7 +40,7 @@ function setBacground (elementId){
 }
 
 // key bacground color remove
-function removeBacground (elementId){
+function removeBacground(elementId){
     const bgId = document.getElementById(elementId);
     bgId.classList.remove('bg-orange-400');
 }

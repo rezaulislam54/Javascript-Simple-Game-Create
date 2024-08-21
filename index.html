@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- custom css -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -87,13 +90,13 @@
                     <!-- display Life -->
                     <button class="btn rounded-full bg-purple-500 text-white px-4">
                         Life
-                        <img src="images/heart.svg" alt="">
+                       <i class="fa-solid fa-heart-circle-plus"></i>
                         <span id="current-life">5</span>
                     </button>
                     <!-- display Score -->
                     <button class="btn rounded-full bg-purple-700 text-white px-4">
                         Score
-                        <img src="images/dollar.svg" alt="">
+                        <i class="fa-solid fa-dollar-sign"></i>
                         <span id="current-score">0</span>
                     </button>
 
@@ -109,9 +112,9 @@
                 <h4 class="text-3xl">Game Over !</h4>
                 <h1 class="text-8xl">
                     <span class="font-extrabold">Score:</span>
-                    <span id="last-score">14</span>
+                    <span id="game-score">14</span>
                 </h1>
-                <button onclick="play()" class="btn">Play Again</button>
+                <button onclick="playGame()" class="btn">Play Again</button>
                 <p>Practice will make you a Pro</p>
             </div>
         </section>
